@@ -31,4 +31,4 @@ else{
 }
 
 // Restituire a schermo la password.
-document.getElementById('pippo').innerHTML = 'Il prezzo del biglietto è:'+ " " + final_price.toFixed(2) +" "+ "&euro;";
+document.getElementById('client_price').innerHTML = 'Il prezzo del biglietto è:'+ " " + final_price.toFixed(2) +" "+ "&euro;";
