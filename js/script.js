@@ -13,7 +13,6 @@ let part_price = (distance * price_km);
 let final_price
 // SE L'utente è minorenne
 //         ALLORA ha diritto ad uno sconto del 20%;
-//     SE L'utente ha più di 65 anni 
 if (age < 18){
     final_price = (part_price - (part_price * 0.2));
 }
@@ -23,12 +22,13 @@ if (age < 18){
 else if (age >= 65){
     final_price = (part_price - (part_price * 0.4));
 }
+
 // SE L'utente è maggiorenne ma ha meno di 65 anni 
 //         ALLORA non ha diritto allo sconto;
-
 else{
     final_price = part_price;
 }
 
 // Restituire a schermo la password.
-document.getElementById('client_price').innerHTML = 'Il prezzo del biglietto è:'+ " " + final_price.toFixed(2) +" "+ "&euro;";
+document.getElementById('client_price').innerHTML = 'Il prezzo del biglietto è di:'+ " " + final_price.toFixed(2) +" "+ "&euro;";
+
