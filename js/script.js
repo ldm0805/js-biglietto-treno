@@ -16,17 +16,17 @@ let final_price
 //         ALLORA ha diritto ad uno sconto del 20% ed il prezzo è arrotondato 2 decimali;
 if (age < 18){
     final_price = (part_price - (part_price * 0.2).toFixed(2));
-    console.log("Il prezzo finale con lo sconto se l'utente è minorenne è" + " " + final_price + '€')
+    console.log("L'utente è minorenne, ha diritto allo sconto del 20%, il prezzo finale è" + " " + final_price + '€')
 }
 // SE L'utente ha più di 65 anni 
 //         ALLORA ha diritto ad uno sconto del 40% ed il prezzo è arrotondato 2 decimali; 
 else if (age >= 65){
     final_price = (part_price - (part_price * 0.4)).toFixed(2);
-    console.log("Il prezzo finale con lo sconto se l'utente è ha un'età maggiore o uguale a 65 anni è" + " " + final_price + '€')
+    console.log("L'utente ha un'età maggiore o uguale a 65 anni, ha diritto allo sconto del 40%, il prezzo finale è" + " " + final_price + '€')
 }
 // SE L'utente è maggiorenne ma ha meno di 65 anni 
 //         ALLORA non ha diritto allo sconto ed il prezzo è arrotondato 2 decimali;
 else{
     final_price = part_price.toFixed(2);
-    console.log("Il prezzo finale per l'utente che ha tra i 18 ed i 65 anni è" + " " + final_price + '€')
+    console.log("L'utente ha tra i 18 ed i 65 anni , non ha diritto allo sconto, il prezzo finale è" + " " + final_price + '€')
 }
